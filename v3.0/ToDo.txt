@@ -1,6 +1,0 @@
-ToDo.txt for Col's SuDoku Solver
---------------------------------
-
-- Email people with updated version of code and new URL
-- Put up Amazon & Google ads on web page before releasing new version
-- Put new code version v3.0 (stable) on website
