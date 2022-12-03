@@ -1,5 +1,0 @@
-ToDo.txt for Col's SuDoku Solver
---------------------------------
-
-- Add in Colouring algorithm??
-- Update the ReadMe file
