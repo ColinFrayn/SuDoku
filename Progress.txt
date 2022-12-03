@@ -1,0 +1,51 @@
+Progress.txt for Col's SuDoku Solver
+------------------------------------
+
+Progress since v1.0
+-------------------
+
+- Decoupled board & control panel
+- Allowed highlighting of individual number permissions
+- Improved GUI
+- Implemented menu system
+
+Progress since v2.0
+-------------------
+
+- Decoupled permission matrix so that it can be edited manually
+- Right mouse button now deselects (and toggles selection) of the permissions in individual cells
+- Display which permission values are removed with a 'x'
+- 'reset permissions' resets the matrix to the default state, using just the simple rules to derive the permissions
+- Control pad is no longer always on top
+- 'do all' button repeatedly applies the simple rules until there is no more possible improvement.  This completely
+  solves most simple SuDoku puzzles.
+- Some changes in the menu system and user interface
+- Undo / redo menu options
+- Added in constrictions (If all possibilities of number 'n' within box A are on the same row/column
+  then you can rule out other occurrences in the same row/column outside box A)
+- Added constrictions by row/column - if all possibilities are in the same box then rule out other values
+  in that box.
+- Added in permission reduction by unique subsets (e.g. 'N numbers found together in exactly N cells in a R/C/B and nowhere
+  else in that R/C/B'. N=2,3,4)
+- Added permission reduction by disjoint subsets for box,row,column
+- Added permission reduction by neighbour pairs (If all the possibilities for number 'n' in a certain box share the same
+  exact two columns as the possibilities for that number in another box in the same column, then remove the possibilities
+  for number 'n' in both those columns in the third box.  Equivalently for boxes in the same row, and numbers
+  sharing the same two rows.)
+ 
+Progress since v3.0
+-------------------
+
+- Added the textual explanation box for all solving moves & all reductions
+  : Included expanded help test, if required
+- Added in 'X-Wing' method for permission reduction for each pair of R,C,B in both directions (6 tests)
+- Added in 'Swordfish' method for permission reduction for R,C triplets
+- Fixed 'disjoint subsets' algorithm
+- Added in capability to export SuDoku puzzles to text, html and postscript formats (for printing)
+- SolveIt! - Solves any SuDoku puzzle instantly using Knuth's 'Dancing Links' Algorithm (highly optimised)
+- Rate the difficulty of any Sudoku puzzle on a 6-point scale
+- Added in diagnostics for each puzzle (number of solutions, legality, completion tally)
+- Added in full SuDoku puzzle generation algorithm, with variable difficulty levels
+- Altered the GUI slightly so I could fit in more options
+- Added in Nishio & forcing chains (guesswork algorithms)
+- Improved board generation mechanism to use a more realistic difficulty measure.

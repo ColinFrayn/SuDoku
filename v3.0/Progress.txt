@@ -1,0 +1,35 @@
+Progress.txt for Col's SuDoku Solver
+------------------------------------
+
+Progress sinve v1.0
+-------------------
+
+- Decoupled board & control panel
+- Allowed highlighting of individual number permissions
+- Improved GUI
+- Implemented menu system
+
+Progress since v2.0
+-------------------
+
+- Decoupled permission matrix so that it can be edited manually
+- Right mouse button now deselects (and toggles selection) of the permissions in individual cells
+- Display which permission values are removed with a 'x'
+- 'reset permissions' resets the matrix to the default state, using just the simple rules to derive the permissions
+- Control pad is no longer always on top
+- 'do all' button repeatedly applies the simple rules until there is no more possible improvement.  This completely
+  solves most simple SuDoku puzzles.
+- Some changes in the menu system and user interface
+- Undo / redo menu options
+- Added in constrictions (If all possibilities of number 'n' within box A are on the same row/column
+  then you can rule out other occurrences in the same row/column outside box A)
+- Added constrictions by row/column - if all possibilities are in the same box then rule out other values
+  in that box.
+- Added in permission reduction by unique subsets (e.g. 'N numbers found together in exactly N cells in a R/C/B and nowhere
+  else in that R/C/B'. N=2,3,4)
+- Added permission reduction by disjoint subsets for box,row,column
+- Added permission reduction by neighbour pairs (If all the possibilities for number 'n' in a certain box share the same
+  exact two columns as the possibilities for that number in another box in the same column, then remove the possibilities
+  for number 'n' in both those columns in the third box.  Equivalently for boxes in the same row, and numbers
+  sharing the same two rows.)
+ 

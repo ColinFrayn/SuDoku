@@ -1,0 +1,10 @@
+ToDo.txt for Col's SuDoku Solver
+--------------------------------
+
+- Add in Colouring algorithm??
+- Update the ReadMe file
+- Fix forcing chains algo (ForcingChainsError.dat)
+- Fix undo/redo for every change that was made
+  : Numbers added
+  : Permissions altered from base state
+- Make moves one at a time??

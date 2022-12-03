@@ -1,0 +1,150 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 50, 50, 95, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_PALETTEWINDOW
+CAPTION "Control Pad"
+FONT 10, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Only one option",IDC_RUN,14,36,66,15
+    PUSHBUTTON      "Reset Solution",IDC_RESET,7,7,81,15
+    PUSHBUTTON      "Box",IDC_BOX,14,55,19,14
+    PUSHBUTTON      "Update Board",IDC_UPDATE,15,90,65,17,0,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Row",IDC_ROW,37,55,20,14
+    PUSHBUTTON      "Col.",IDC_COLUMN,61,55,19,14
+    PUSHBUTTON      "Show Permissions",IDC_SHOW,15,162,65,18
+    PUSHBUTTON      "Clear Results",IDC_CLEAR,14,73,66,13
+    PUSHBUTTON      "1",IDC_1,10,130,13,11
+    PUSHBUTTON      "2",IDC_2,25,130,13,11
+    PUSHBUTTON      "3",IDC_3,40,130,13,11
+    PUSHBUTTON      "4",IDC_4,55,130,13,11
+    PUSHBUTTON      "5",IDC_5,70,130,13,11
+    PUSHBUTTON      "6",IDC_6,10,144,13,11
+    PUSHBUTTON      "7",IDC_7,25,144,13,11
+    PUSHBUTTON      "8",IDC_8,40,144,13,11
+    PUSHBUTTON      "9",IDC_9,55,144,13,11
+    PUSHBUTTON      "",IDC_0,70,144,13,11
+    GROUPBOX        "Permissions",IDC_STATIC,7,116,81,71
+    GROUPBOX        "Solver",IDC_STATIC,7,25,81,86
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 88
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "New",                         IDM_FILE_NEW
+        MENUITEM "Load",                        IDM_FILE_LOAD
+        MENUITEM "Save",                        IDM_FILE_SAVE
+        MENUITEM "Exit",                        IDM_FILE_EXIT
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       IDM_HELP_ABOUT
+    END
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
